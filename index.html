@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ahorra tiempo y dinero organizando tu heladera con el Método 2H. Cocina menús express y saludables en menos de 15 minutos." />
+    <title>Método 2H: Heladera Inteligente - Organiza tus comidas</title>
+
+    <!-- Preconnect to Fonts and Image services to eliminate DNS and connection blocking delay -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://i.postimg.cc" />
+
+    <!-- Eager portrait/background preloads for optimal Largest Contentful Paint (LCP) -->
+    <link rel="preload" as="image" href="https://i.postimg.cc/NM8BLnk9/input-file-3-(1).webp" type="image/webp" fetchpriority="high" crossorigin="anonymous" />
+
+    <!-- Google Fonts loaded asynchronously with high-priority link preloads and display=swap -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" />
+    </noscript>
+  </head>
+  <body>
+    <!-- Meta Pixel Code (noscript fallback) -->
+    <noscript>
+      <img height="1" width="1" style="display:none" 
+           src="https://www.facebook.com/tr?id=1730006398435296&ev=PageView&noscript=1"/>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" defer crossorigin src="/src/main.tsx"></script>
+
+    <!-- Meta Pixel Code optimized to defer third-party script execution, eliminating CPU blocking and boosting speed scores -->
+    <script>
+      function initFacebookPixel() {
+        if (window.fbPixelLoaded) return;
+        window.fbPixelLoaded = true;
+
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1730006398435296');
+        fbq('track', 'PageView');
+      }
+
+      // Initialize on first user interaction or fallback timeout to ensure analytical accuracy without initial render CPU blocking
+      var pixelTimer = setTimeout(initFacebookPixel, 2500);
+      function loadPixelOnInteraction() {
+        initFacebookPixel();
+        clearTimeout(pixelTimer);
+        ['touchstart', 'scroll', 'mouseover'].forEach(function(ev) {
+          window.removeEventListener(ev, loadPixelOnInteraction);
+        });
+      }
+      ['touchstart', 'scroll', 'mouseover'].forEach(function(ev) {
+        window.addEventListener(ev, loadPixelOnInteraction, { passive: true });
+      });
+    </script>
+    <!-- End Meta Pixel Code -->
+  </body>
+</html>
+

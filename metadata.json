@@ -1,0 +1,6 @@
+{
+  "name": "Método 2H: Heladera Inteligente",
+  "description": "Página de ventas oficial y aplicación interactiva del Método 2H™ para planificar, comprar y preparar tus comidas en 2 horas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
