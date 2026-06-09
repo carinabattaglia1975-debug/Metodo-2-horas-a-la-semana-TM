@@ -773,33 +773,7 @@ export const FridgeApp: React.FC<FridgeAppProps> = ({ onCtaclick }) => {
             )}
           </div>
 
-          {/* Prompting users to scroll or unlock the eBook with full-package */}
-          <div className="border-t border-stone-800 pt-6 mt-8">
-            <div className="bg-[#1c3527]/40 border border-[#2b523c]/40 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="text-left">
-                <p className="text-xs text-stone-300 leading-relaxed font-serif font-medium">
-                  <strong>¿Querés automatizar la organización de tu cocina para siempre?</strong>
-                </p>
-                <p className="text-[10px] text-stone-400 leading-normal mt-0.5">
-                  La Heladera Inteligente™ te da sugerencias instantáneas. Llevate hoy la versión Premium con acceso prioritario de por vida, guías de compra inteligente, recetarios avanzados y el libro de estrategias para optimizar tu alacena de la forma más rápida y económica.
-                </p>
-              </div>
-              <button
-                onClick={() => {
-                  if (onCtaclick) {
-                    onCtaclick();
-                  } else {
-                    const element = document.getElementById("oferta-cierre");
-                    element?.scrollIntoView({ behavior: "smooth", block: "start" });
-                  }
-                }}
-                className="cursor-pointer bg-white text-stone-950 text-xs font-semibold px-4 py-2 rounded-lg hover:bg-stone-100 transition-all font-sans flex-shrink-0 flex items-center gap-1.5 border-none"
-              >
-                <span>Ver Precio de Lanzamiento</span>
-                <ChevronRight className="w-3.5 h-3.5 text-stone-950" />
-              </button>
-            </div>
-          </div>
+
         </div>
 
       </div>
