@@ -31,9 +31,9 @@ const TESTIMONIALS: Testimonial[] = [
     name: "Laura G.",
     role: "Abogada (trabaja 9h)",
     rating: 5,
-    comment: "Cocinar a la noche después de estar todo el día en el tribunal era mi tortura. Con el Método 2H, mi heladera cambió por completo.",
+    comment: "Cocinar a la noche después de estar todo el día en el tribunal era mi tortura. Con la Heladera Inteligente™, mi relación con la cocina cambió por completo.",
     before: "Llegaba agotada, pensaba qué comer por 30 minutos.",
-    after: "Tengo bases listas y en 7 minutos tengo un wok caliente.",
+    after: "Ingreso mis ingredientes y en 5 minutos tengo un menú caliente resuelto.",
     avatarSeed: "laura"
   },
   {
@@ -41,7 +41,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: "Mariela T.",
     role: "Contadora y Madre",
     rating: 5,
-    comment: "Lo que más odiaba era la bendita pregunta de '¿Qué cocino hoy?'. Este método destruye esa fatiga de decisión diaria.",
+    comment: "Lo que más odiaba era la bendita pregunta de '¿Qué cocino hoy?'. Esta app destruye esa fatiga de decisión diaria.",
     before: "Abría la heladera vacía de ideas y con un montón de culpa.",
     after: "Cargo lo que tengo, la app me resuelve el menú en segundos y listo.",
     avatarSeed: "mariela"
@@ -51,9 +51,9 @@ const TESTIMONIALS: Testimonial[] = [
     name: "Camila R.",
     role: "Programadora Frontend",
     rating: 5,
-    comment: "La preparación por bloques que enseña el PDF es una obra de ingeniería del tiempo. Inteligente y súper ágil.",
+    comment: "La guía de planificación que acompaña a la app es una obra de ingeniería del tiempo. Inteligente y súper ágil.",
     before: "Múltiples compras duplicadas por falta de planificación.",
-    after: "Compro una sola vez y preparo todo en 2 horas.",
+    after: "Compro solo lo que necesito y la app me ayuda a optimizar todo.",
     avatarSeed: "camila"
   },
   {
@@ -61,51 +61,61 @@ const TESTIMONIALS: Testimonial[] = [
     name: "Sofía V.",
     role: "Médica de Guardia",
     rating: 5,
-    comment: "Encontrar comida sana con mi horario rotativo era utópico. Las bases aguantan perfecto y te nutren real.",
+    comment: "Encontrar comida sana con mi horario rotativo era utópico. La app me sugiere platos deliciosos con lo que hay al instante.",
     before: "Comiendo ultraprocesados rápidos en el sanatorio.",
-    after: "Tapers organizados que se combinan solos. Comida real.",
+    after: "Platos organizados que se combinan al momento. Comida real.",
     avatarSeed: "sofia"
   }
 ];
 
 const FAQS: FAQ[] = [
   {
-    question: "¿Qué es exactamente el Método 2H™?",
-    answer: "Es una guía práctica digital detallada paso a paso que te enseña a planificar y organizar tus alimentos el fin de semana en solo 2 horas, para que de lunes a viernes solo tengas que ensamblar comida fresca y saludable en menos de 10 minutos."
+    id: "faq-1",
+    question: "¿Qué es exactamente la Heladera Inteligente™?",
+    answer: "Es un sistema interactivo compuesto por nuestra App Web Inteligente Premium junto con manuales prácticos y recetarios estructurados que te permiten gestionar tus alimentos reales, ver recetas instantáneas creadas con lo que ya tenés en casa, y automatizar toda tu planificación semanal para reducir tu desperdicio y tu fatiga de decisión diaria."
   },
   {
+    id: "faq-2",
     question: "¿Tengo que pasarme todo el domingo cocinando?",
-    answer: "Para nada. Ese es el gran error del \"batch cooking\" tradicional que te deja agotada lavando vajilla. Con nuestro sistema optimizado por bloques, vas a cocinar de forma secuenciada y ágil para dejar listos \"módulos\" super versátiles que se combinan solos."
+    answer: "Para nada. Ese es el gran error del \"batch cooking\" tradicional que te deja agotada lavando vajilla. Con nuestro sistema optimizado por bloques, vas a cocinar de forma secuenciada y ágil para dejar listos \"módulos\" super versátiles que se combinan solos en la app."
   },
   {
+    id: "faq-3",
     question: "¿Qué recibo exactamente al realizar el pago?",
-    answer: "Recibís acceso inmediato a tu casilla de correo electrónico. Allí tendrás el enlace de descarga del PDF Principal del Método 2H™ junto con todas las plantillas de planificación y listas de verificación, además del enlace exclusivo de acceso de por vida al Bono #1 (App Web Heladera Inteligente) y los demás recetarios anexos."
+    answer: "Recibís acceso inmediato a tu casilla de correo electrónico. Allí tendrás tu cuenta con acceso exclusivo de por vida a la App Web Heladera Inteligente™ junto con la descarga de la Guía Premium de Alimentos y Alacena, la Lista de Compras Inteligente y los recetarios diseñados para simplificar tu mes de corrido."
   },
   {
+    id: "faq-4",
     question: "¿La app web 'Heladera Inteligente' requiere instalación?",
     answer: "No. Es una aplicación web moderna que se abre con un solo toque desde cualquier navegador en celular, tablet o computadora. No ocupa espacio en tu almacenamiento ni requiere actualizaciones molestas."
   },
   {
+    id: "faq-5",
     question: "¿Funciona bien en teléfonos celulares?",
     answer: "Sí, está totalmente adaptada para pantallas móviles. Podés cargar tus ingredientes con una sola mano parado frente a tu heladera real a las 8 PM y ver los menús al instante."
   },
   {
+    id: "faq-6",
     question: "¿Cómo crea menús con lo que tengo?",
-    answer: "Cargás de manera muy fácil e intuitiva los ingredientes de tu heladera organizados por secciones (Proteínas, Verduras, Hidratos, etc.) y cantidades. La aplicación procesa la información y te diseña recomendaciones de menús súper fáciles basadas enteramente en lo disponible para reducir tu desperdicio."
+    answer: "Cargás de manera muy fácil e intuitiva los ingredientes de tu heladera organizados por secciones (Proteínas, Verduras, Hidratos, etc.). La aplicación procesa la información y te diseña recomendaciones de menús súper fáciles basadas enteramente en lo disponible para reducir tu desperdicio."
   },
   {
-    question: "¿Cuánto tiempo necesito realmente para aplicar el método?",
-    answer: "Solo necesitás una sesión concentrada de 2 horas un día del fin de semana (o tu día libre) para dejar listas tus bases de verduras, proteínas e hidratos de carbono. El resto de la semana, tu tiempo invertido será menor a 15 minutos por comida, ya que solo ensamblarás y calentarás las bases pre-preparadas."
+    id: "faq-7",
+    question: "¿Cuánto tiempo me ahorro usando la App?",
+    answer: "Vas a reducir el tiempo de decisión diaria a cero y ahorrar aproximadamente de 10 a 14 horas semanales de dar vueltas pensando qué cenar o yendo al supermercado a hacer compras de último momento."
   },
   {
+    id: "faq-8",
     question: "¿Qué pasa si no tengo experiencia previa en la cocina?",
     answer: "Es ideal para principiantes. El método no requiere técnicas gourmet avanzadas. El foco está puesto en la eficiencia del tiempo, la organización de las tareas en la cocina y la combinación lógica de alimentos sencillos."
   },
   {
+    id: "faq-9",
     question: "¿Tengo algún tipo de garantía?",
-    answer: "Sí, tenés una garantía incondicional de reembolso por 7 días. Si leés la guía y sentís que el Método 2H™ no aporta claridad, valor y un sistema totalmente aplicable para simplificar tu semana, nos escribís y te devolvemos el 100% de tu dinero sin preguntas."
+    answer: "Sí, tenés una garantía incondicional de reembolso por 7 días. Si usás la app y sentís que la Heladera Inteligente™ no aporta claridad, valor y un sistema totalmente aplicable para simplificar tu semana, nos escribís y te devolvemos el 100% de tu dinero sin preguntas."
   },
   {
+    id: "faq-10",
     question: "¿Dónde puedo pedir ayuda o soporte técnico si lo necesito?",
     answer: "Brindamos soporte directo vía correo electrónico en aurevastudio2@gmail.com o a través de nuestra cuenta oficial de Instagram @cocina_quetransforma."
   }
@@ -135,7 +145,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
     {
       title: "Bono #3: Recetario",
       tagline: "Recetario Express 15 Minutos (20 Recetas)",
-      description: "20 recetas ultra rápidas and nutritivas utilizando tus bases pre-preparadas del Método 2H, diseñadas para que cocines sin esfuerzo físico ni cansancio.",
+      description: "20 recetas ultra rápidas y nutritivas totalmente integradas con tu Heladera Inteligente, diseñadas para que cocines sin esfuerzo físico ni cansancio.",
       webpImage: "https://i.postimg.cc/JhQ5fH0v/bono2-recetario-15m.webp",
       fallbackImage: "https://i.postimg.cc/JhQ5fH0v/bono2-recetario-15m.webp",
       badge: "Express"
@@ -243,10 +253,10 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
             <span className="text-[#a1cca5]">El verdadero problema es decidir.</span>
           </h2>
           <p className="text-stone-300 text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            Volver a casa después de un día agotador de 10 horas de trabajo es tremendo. Abrir la heladera, quedarte mirando las estanterías, pensar qué comprar a último momento o qué improvisar te termina de quemar la cabeza.
+            Volver a casa después de un día agotador de 10 horas de trabajo es tremendo. Abrir la heladera, quedarte mirando las estanterías de forma vacía, pensar qué comprar a último momento o qué improvisar te termina de quemar la cabeza.
           </p>
           <p className="text-stone-300 text-base md:text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
-            Eso no es falta de voluntad: es que estás harta de pensar qué cocinar. Terminás pidiendo un delivery carísimo, comiendo cualquier porquería congelada o cocinando el mismo plato aburrido de siempre. El Método 2H™ corta este bucle de raíz convirtiendo la comida en una acción fácil de resolver en minutos.
+            Eso no es falta de voluntad: es que estás harta de pensar qué cocinar. Terminás pidiendo un delivery carísimo, comiendo cualquier porquería congelada o cocinando el mismo plato aburrido de siempre. La Heladera Inteligente™ corta este bucle de raíz convirtiendo la comida en una acción fácil de resolver en minutos.
           </p>
 
           <div className="inline-flex flex-col sm:flex-row items-center gap-6 justify-center bg-stone-800/80 p-6 rounded-2xl border border-stone-800 backdrop-blur max-w-xl mx-auto">
@@ -257,23 +267,23 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
             </div>
             <div className="text-left">
               <p className="text-sm text-stone-200 font-serif font-medium">Basta de decidir a las 8 de la noche.</p>
-              <p className="text-xs text-stone-200">Sumate a más de 12.000 alumnas con la semana resuelta.</p>
+              <p className="text-xs text-stone-200">Sumate a más de 12.000 personas con la semana resuelta.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4) QUÉ ES EL MÉTODO 2H™ */}
+      {/* 4) QUÉ ES LA HELADERA INTELIGENTE™ */}
       <section className="py-12 px-4 md:px-8 max-w-6xl mx-auto" id="metodo">
         <div className="text-center mb-8">
           <span className="text-xs font-semibold tracking-widest text-[#2c5e43] uppercase bg-emerald-100/60 px-3 py-1 rounded-full">
             El Sistema
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-medium mt-3 tracking-tight text-stone-900">
-            ¿Qué es el Método 2H™ y por qué funciona?
+            ¿Cómo funciona el Sistema Heladera Inteligente™ y por qué cambia tu vida?
           </h2>
-          <p className="text-stone-700 mt-4 max-w-2xl mx-auto">
-            No es un recetario tradicional infinito. Es una guía inteligente que transforma tu fin de semana en una inversión de paz para los siguientes 5 días.
+          <p className="text-stone-700 mt-4 max-w-2xl mx-auto leading-relaxed">
+            No es un conjunto de recetas irreales. Es un software interactivo inteligente acompañado de guías estratégicas que transforma tu heladera real en opciones deliciosas disponibles al instante, ahorrándote horas de indecisión.
           </p>
         </div>
 
@@ -379,9 +389,9 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
             className="cursor-pointer inline-flex items-center gap-2 bg-[#2c5e43] hover:bg-[#1e442f] text-white px-8 py-4.5 rounded-xl font-medium tracking-wide text-lg shadow-lg transition-all transform hover:scale-[1.02] border-none"
           >
             <Sparkles className="w-5 h-5 text-amber-300 fill-amber-300 animate-pulse" />
-            <span>Quiero mi Método 2H + Heladera Inteligente</span>
+            <span>Quiero mi Heladera Inteligente™</span>
           </button>
-          <p className="text-xs text-stone-700 font-medium mt-2">Bono #1: App Heladera Inteligente - Se abre de inmediato en el navegador</p>
+          <p className="text-xs text-stone-700 font-medium mt-2">Acceso instantáneo de por vida a la App Heladera Inteligente en tu navegador</p>
         </div>
       </section>
 
@@ -501,7 +511,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
             El Paquete Completo
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-medium mt-3 tracking-tight text-stone-900">
-            ¿Qué recibís al comprar el Método 2H™ hoy?
+            ¿Qué recibís al comprar el Pack de la Heladera Inteligente™ hoy?
           </h2>
           <p className="text-stone-700 mt-2 text-sm md:text-base max-w-xl mx-auto">
             Acceso absoluto e inmediato a todo el material para optimizar tus comidas, tu presupuesto y ganar paz mental.
@@ -593,7 +603,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
                     className="cursor-pointer w-full bg-[#2c5e43] text-white hover:bg-[#1e442f] px-5 py-3 rounded-xl text-xs font-bold inline-flex items-center justify-center gap-2 shadow-sm transition-all border-none"
                   >
                     <Sparkles className="w-3.5 h-3.5 text-amber-300 fill-amber-300 animate-pulse" />
-                    <span>Quiero mi Método 2H + Heladera Inteligente</span>
+                    <span>Quiero mi Heladera Inteligente™</span>
                   </button>
                 </div>
               </div>
@@ -609,9 +619,9 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
                 <div className="inline-flex items-center gap-1.5 bg-[#2c5e43]/10 text-[#2c5e43] text-xs font-semibold px-2.5 py-0.5 rounded">
                   EBOOK PRINCIPAL
                 </div>
-                <h3 className="text-xl font-serif font-medium text-stone-900">Guía Paso a Paso: Método 2H™ (PDF)</h3>
+                <h3 className="text-xl font-serif font-medium text-stone-900">Manual del Usuario: Heladera Inteligente™ (PDF)</h3>
                 <p className="text-stone-700 text-sm max-w-xl">
-                  Toda la metodología detallada para planificar la base de tus comidas, armar la lista de compras del súper secuenciada por góndolas y preparar tus porciones en solo 2 horas. Incluye plantillas de planificación descargables y check-lists.
+                  Toda la metodología detallada para planificar la base de tus comidas, armar la lista de compras del súper secuenciada de forma lógica y gestionar tus recursos en casa. Incluye plantillas de planificación descargables y check-lists.
                 </p>
               </div>
               <div className="text-xs text-stone-700 border-t border-stone-200 pt-3">
@@ -623,7 +633,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
             <div className="lg:w-1/4 flex flex-col justify-center items-center bg-stone-50/50 rounded-xl p-2 border border-stone-200">
               <img 
                 src="https://i.postimg.cc/G384ZKFM/input-file-2.webp" 
-                alt="Método 2H Mockup Preview" 
+                alt="Heladera Inteligente Mockup Preview" 
                 loading="lazy"
                 referrerPolicy="no-referrer"
                 className="w-full max-h-[120px] object-contain rounded"
@@ -854,7 +864,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
                 </div>
                 <h3 className="text-xl font-serif font-medium text-[#2c5e43]">Recetario Desinflamatorio para Semanas Inteligentes</h3>
                 <p className="text-stone-700 text-sm max-w-xl leading-relaxed">
-                  18 recetas prácticas que se resuelven en un rango de 15 a 25 minutos. Especialmente diseñadas con opciones deliciosas libre de gluten y libre de lácteos. Incluye plantilla de menú ejemplo de 5 días de corrido y guía rápida para días infinitamente caóticos. Totalmente compatible con la dinámica de bases del Método 2H™.
+                  18 recetas prácticas que se resuelven en un rango de 15 a 25 minutos. Especialmente diseñadas con opciones deliciosas libre de gluten y libre de lácteos. Incluye plantilla de menú ejemplo de 5 días de corrido y guía rápida para días infinitamente caóticos. Totalmente compatible con la dinámica de tu Heladera Inteligente™.
                 </p>
               </div>
               <div className="text-xs text-[#2c5e43] bg-emerald-50 rounded-xl p-3 border border-emerald-1050/50">
@@ -1001,7 +1011,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
               <div className="absolute inset-0 bg-[#2c5e43]/5 rounded-3xl blur-2xl group-hover:bg-[#2c5e43]/10 transition-all"></div>
               <img 
                 src="https://i.postimg.cc/1XK6fc9G/Chat-GPT-Image-27-may-2026-17-09-10-(1).webp" 
-                alt="Nutricionista y Creadora del Método 2H™" 
+                alt="Nutricionista y Creadora de Heladera Inteligente™" 
                 loading="lazy"
                 referrerPolicy="no-referrer"
                 className="relative rounded-3xl border border-stone-200 shadow-xl object-cover w-full h-[380px] md:h-[480px] hover:scale-[1.01] transition-transform duration-300"
@@ -1013,10 +1023,10 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
             {/* Right: Creator text and skills */}
             <div className="space-y-6">
               <span className="text-xs font-semibold tracking-widest text-[#2c5e43] uppercase bg-emerald-100/60 px-3 py-1 rounded-full">
-                La Creadora del Método
+                La Creadora
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-medium text-stone-900 tracking-tight leading-tight">
-                La mente profesional detrás del <span className="text-[#2c5e43]">Método 2H™</span>
+                La mente profesional detrás de <span className="text-[#2c5e43]">Heladera Inteligente™</span>
               </h2>
               <h3 className="text-2xl font-serif font-semibold text-[#2c5e43] mt-1">
                 Laura Martínez
@@ -1080,7 +1090,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
               Todo esto es tuyo hoy por una fracción de su valor real
             </h2>
             <p className="text-stone-300 text-sm md:text-base max-w-2xl mx-auto">
-              Al sumarte al <strong className="text-white font-semibold">Método 2H™</strong>, desbloqueás el sistema de organization definitivo y el paquete completo de herramientas premium para transformar tu alimentación y liberar tus tardes de lunes a viernes:
+              Al sumarte a la Heladera Inteligente™ Premium, desbloqueás el sistema de organización definitivo y el paquete completo de herramientas premium para transformar tu alimentación y liberar tus tardes de lunes a viernes:
             </p>
           </div>
 
@@ -1089,7 +1099,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
             <div className="bg-stone-950/40 border border-stone-800/80 p-5 rounded-2xl flex gap-3.5 items-start hover:border-emerald-700/50 transition-all">
               <span className="p-2 bg-emerald-500/10 rounded-xl text-emerald-400 font-serif font-bold text-xs shrink-0">PDF</span>
               <div>
-                <h4 className="font-serif font-semibold text-white text-base">Guía Táctica Método 2H™ completa</h4>
+                <h4 className="font-serif font-semibold text-white text-base">Guía Táctica de la Heladera Inteligente completa</h4>
                 <p className="text-stone-400 text-xs mt-1">El plan estratégico paso a paso detallado para aprender a pre-preparar, acoplar y combinar tus comidas en solo 2 horas semanales.</p>
                 <div className="flex items-center gap-1.5 mt-2.5">
                   <span className="text-[10px] bg-stone-850 px-2 py-0.5 rounded text-stone-300 font-mono">Valor: $17.900 ARS</span>
@@ -1130,7 +1140,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
               <span className="p-2 bg-emerald-500/10 rounded-xl text-emerald-400 font-serif font-bold text-xs shrink-0">B3</span>
               <div>
                 <h4 className="font-serif font-semibold text-white text-base">Bono #3: Recetario Express 15 Minutos</h4>
-                <p className="text-stone-400 text-xs mt-1">20 recetas ultra-rápidas, ricas y equilibradas diseñadas especialmente para ensamblar al instante con tus bases listas del Método 2H.</p>
+                <p className="text-stone-400 text-xs mt-1">20 recetas ultra-rápidas, ricas y equilibradas diseñadas especialmente para ensamblar al instante con tu Heladera Inteligente.</p>
                 <div className="flex items-center gap-1.5 mt-2.5">
                   <span className="text-[10px] bg-stone-850 px-2 py-0.5 rounded text-stone-300 font-mono">Valor: $8.500 ARS</span>
                   <span className="text-[10px] font-semibold text-[#a5cca8] bg-[#2c5e43]/20 px-2 py-0.5 rounded">¡GRATIS!</span>
@@ -1171,7 +1181,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
 
             <div className="space-y-2 pt-2 text-left text-xs">
               <div className="flex justify-between items-center text-stone-400 pb-2 border-b border-stone-900">
-                <span>Método 2H™ + App Heladera Inteligente</span>
+                <span>Suscripción Heladera Inteligente™ Premium</span>
                 <span>$17.900 ARS</span>
               </div>
               <div className="flex justify-between items-center text-stone-400 pb-2 border-b border-stone-900">
@@ -1225,7 +1235,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
               className="no-underline cursor-pointer bg-emerald-600 text-white hover:bg-emerald-700 border-none px-10 py-5 rounded-xl font-serif font-bold text-lg md:text-xl tracking-wide shadow-2xl shadow-emerald-950/15 transition-all transform hover:scale-[1.01] active:scale-[0.99] inline-flex items-center justify-center gap-2.5 mx-auto animate-pulse"
             >
               <ShoppingBag className="w-5 h-5 text-white animate-pulse shrink-0" />
-              <span>Quiero mi Método 2H + Heladera Inteligente</span>
+              <span>Quiero mi Heladera Inteligente™</span>
             </a>
           </div>
 
@@ -1315,7 +1325,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
       {/* PIE DE PÁGINA */}
       <footer className="bg-stone-900 text-stone-400 py-12 px-4 border-t border-stone-800 text-xs md:text-sm text-center">
         <div className="max-w-4xl mx-auto space-y-4">
-          <p className="font-serif text-stone-200">Método 2H™ - Todos los derechos reservados © {new Date().getFullYear()}</p>
+          <p className="font-serif text-stone-200">Heladera Inteligente™ - Todos los derechos reservados © {new Date().getFullYear()}</p>
           <p className="max-w-2xl mx-auto text-stone-500 text-[11px] leading-relaxed">
             Este sitio web no forma parte de Meta Platforms, Inc. ni está aprobado por Meta. Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños. Aureva Studio SAS.
           </p>

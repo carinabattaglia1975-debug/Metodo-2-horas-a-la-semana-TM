@@ -81,7 +81,7 @@ export default function CheckoutModal({
                   {/* Brief cart order summary */}
                   <div className="bg-stone-50 p-4 rounded-xl border border-stone-200/50 text-xs space-y-2">
                     <div className="flex justify-between font-serif text-sm font-semibold text-stone-900">
-                      <span>Método 2H™ + 5 Bonos de Lanzamiento</span>
+                      <span>Heladera Inteligente™ Completa + Recetarios</span>
                       <span className="text-[#2c5e43]">$17.900 ARS</span>
                     </div>
                     <p className="text-stone-700">Incluye acceso de por vida a la App Web Heladera Inteligente y garantía incondicional.</p>
@@ -192,12 +192,12 @@ export default function CheckoutModal({
                     
                     <div className="py-2.5 flex justify-between items-center text-stone-850">
                       <div className="space-y-0.5">
-                        <p className="font-semibold text-stone-900 font-serif">1) Guía Táctica Método 2H™ (PDF)</p>
-                        <p className="text-[10px] text-stone-700">Guía de planificación completa + Planillas</p>
+                        <p className="font-semibold text-stone-900 font-serif">1) Guía Premium de Heladera Inteligente (PDF)</p>
+                        <p className="text-[10px] text-stone-700">Guía de planificación completa + Planillas de Alacena</p>
                       </div>
                       <a 
                         href="#" 
-                        onClick={(e) => { e.preventDefault(); alert("Simulando descarga de la Guía Método 2H..."); }}
+                        onClick={(e) => { e.preventDefault(); alert("Simulando descarga de la Guía de Heladera Inteligente..."); }}
                         className="p-1 px-2.5 bg-[#2c5e43] hover:bg-[#1c3a2a] text-stone-50 rounded flex items-center gap-1.5 transition-all text-[11px] font-sans no-underline font-medium"
                       >
                         <Download className="w-3.5 h-3.5" />

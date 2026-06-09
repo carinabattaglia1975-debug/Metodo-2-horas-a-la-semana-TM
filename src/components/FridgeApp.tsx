@@ -54,7 +54,7 @@ const DEFAULT_PRESET_RECIPES: GeneratedRecipe[] = [
   {
     id: "d-rec-1",
     name: "Bowl rápido de pollo y arroz",
-    description: "La combinación clásica del Método 2H. Teniendo las bases cocidas, solo templas y disfrutas de un plato caliente, equilibrado y reconfortante.",
+    description: "La combinación clásica recomendada. Teniendo las bases listas en casa, solo templas y disfrutas de un plato caliente, equilibrado y reconfortante.",
     cookingTime: "6 min",
     prepMinutes: 6,
     usedIngredients: ["Pollo cocido desmechado", "Arroz integral cocido", "Espinaca tierna lavada", "Salsa marinara espesa"],
@@ -152,7 +152,7 @@ const SOS_PRESET_RECIPES: GeneratedRecipe[] = [
   {
     id: "sos-rec-1",
     name: "Arroz Chaufa Veloz de Emergencia (SOS)",
-    description: "La técnica definitiva del Método 2H para salvar un arroz de anteayer utilizando cebolla y huevo batido en un wok ultra-caliente.",
+    description: "La técnica definitiva de cocina express para salvar un arroz de anteayer utilizando cebolla y huevo batido en un wok ultra-caliente.",
     cookingTime: "8 min",
     prepMinutes: 8,
     usedIngredients: ["Arroz blanco de anteayer", "Un huevo crudo", "Restito de cebolla", "Cilantro o perejil marchito"],
@@ -232,7 +232,7 @@ export const FridgeApp: React.FC<FridgeAppProps> = ({ onCtaclick }) => {
   const loadingMessages = [
     "Revisando tus estantes virtuales...",
     "Clasificando tus bases de proteínas e hidratos...",
-    "Consultando el motor del Método 2H™...",
+    "Consultando el motor de inteligencia artificial...",
     "Reduciendo tus decisiones diarias a cero...",
     "¡Preparando tus sugerencias express listas para servir!"
   ];
@@ -247,7 +247,7 @@ export const FridgeApp: React.FC<FridgeAppProps> = ({ onCtaclick }) => {
       [defaultKey]: {
         recipes: DEFAULT_PRESET_RECIPES,
         sourceType: "local",
-        apiMessage: "Sugerencias inteligentes listas para servir (Método 2H™)."
+        apiMessage: "Sugerencias inteligentes listas para servir."
       },
       [methodKey]: {
         recipes: METHOD_PRESET_RECIPES,
@@ -413,7 +413,7 @@ export const FridgeApp: React.FC<FridgeAppProps> = ({ onCtaclick }) => {
         <div>
           <div className="flex items-center gap-2">
             <span className="p-1 px-2.5 bg-amber-400 text-stone-950 text-[10px] font-bold uppercase rounded-full tracking-wider font-sans">
-              Bono #1 Incluido
+              Acceso Completo
             </span>
             <span className="text-[11px] text-emerald-300 font-mono flex items-center gap-1">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -434,19 +434,19 @@ export const FridgeApp: React.FC<FridgeAppProps> = ({ onCtaclick }) => {
           <button
             onClick={() => loadPreset("metodo")}
             className="cursor-pointer bg-emerald-800/60 text-emerald-100 hover:bg-emerald-800 text-xs py-1.5 px-3 rounded-lg border border-emerald-700/50 transition-all flex items-center gap-1 font-medium"
-            title="Carga la base típica del domingo del Método 2H"
+            title="Carga la base típica de una heladera abastecida"
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            <span>Heladera Llena (Método 2H)</span>
+            <span>Heladera Completa (Muestra)</span>
           </button>
           
           <button
             onClick={() => loadPreset("sos")}
             className="cursor-pointer bg-[#3a201c] text-red-200 hover:bg-[#4d2c27] text-xs py-1.5 px-3 rounded-lg border border-red-950/50 transition-all flex items-center gap-1 font-medium"
-            title="Carga pocos ingredientes simulando la cena del domingo (Bono #4 SOS)"
+            title="Carga pocos ingredientes sirviendo de escenario SOS"
           >
             <AlertCircle className="w-3.5 h-3.5 text-orange-400" />
-            <span>SOS Heladera Vacía (Bono 4)</span>
+            <span>SOS Heladera Vacía</span>
           </button>
           
           <button
@@ -608,7 +608,7 @@ export const FridgeApp: React.FC<FridgeAppProps> = ({ onCtaclick }) => {
               <span>{loading ? "Analizando heladera..." : "Crear menú con lo que tengo"}</span>
             </button>
             <p className="text-[10px] text-stone-400 text-center mt-2.5">
-              Genera sugerencias en segundos aplicando el minimalismo decisional de 15 minutos del Método 2H™.
+              Genera sugerencias en segundos aplicando el motor inteligente de cocina sin desperdicios.
             </p>
           </div>
 
@@ -778,10 +778,10 @@ export const FridgeApp: React.FC<FridgeAppProps> = ({ onCtaclick }) => {
             <div className="bg-[#1c3527]/40 border border-[#2b523c]/40 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="text-left">
                 <p className="text-xs text-stone-300 leading-relaxed font-serif font-medium">
-                  <strong>¿Querés aprender a dejar estas bases listas en solo 2 horas el domingo?</strong>
+                  <strong>¿Querés automatizar la organización de tu cocina para siempre?</strong>
                 </p>
                 <p className="text-[10px] text-stone-400 leading-normal mt-0.5">
-                  El Bono #1 es una herramienta fantástica, pero el verdadero sistema estructurado de planificación está en el libro principal.
+                  La Heladera Inteligente™ te da sugerencias instantáneas. Llevate hoy la versión Premium con acceso prioritario de por vida, guías de compra inteligente, recetarios avanzados y el libro de estrategias para optimizar tu alacena de la forma más rápida y económica.
                 </p>
               </div>
               <button

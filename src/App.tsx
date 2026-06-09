@@ -142,18 +142,17 @@ export default function App() {
       {/* Floating Sticky Top Bar (Aesthetic & Purposeful) */}
       <header className="sticky top-0 z-40 w-full bg-white/85 backdrop-blur-md border-b border-stone-200/60 px-6 py-2.5 md:py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-[#2c5e43] flex items-center justify-center font-serif font-bold text-white text-base">
-            2H
+          <div className="w-8 h-8 rounded-lg bg-[#2c5e43] flex items-center justify-center font-serif font-bold text-white text-sm">
+            HI
           </div>
           <span className="font-serif font-semibold text-stone-900 tracking-tight text-base">
-            Método 2H™
+            Heladera Inteligente™
           </span>
         </div>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-stone-700">
           <a href="#audiencia" className="hover:text-stone-950 transition-colors">¿Para quién?</a>
-          <a href="#metodo" className="hover:text-stone-950 transition-colors">El Sistema</a>
-          <a href="#seccion-app-inteligente" className="hover:text-stone-950 transition-colors">Ver App Web (Bono 1)</a>
+          <a href="#seccion-app-inteligente" className="hover:text-stone-950 transition-colors">Demostración en Vivo</a>
           <a href="#testimonios" className="hover:text-stone-950 transition-colors">Testimonios</a>
           <a href="#faq" className="hover:text-stone-950 transition-colors text-stone-700">Soporte</a>
         </nav>
@@ -163,7 +162,7 @@ export default function App() {
           className="cursor-pointer bg-emerald-600 text-stone-50 hover:bg-emerald-700 border-none text-xs md:text-sm font-medium py-2 px-4.5 rounded-lg flex items-center gap-1.5 transition-all shadow-sm"
         >
           <ShoppingBag className="w-4 h-4" />
-          <span>Quiero mi Método 2H + Heladera Inteligente</span>
+          <span>Quiero mi Heladera Inteligente™</span>
         </button>
       </header>
 
@@ -229,13 +228,13 @@ export default function App() {
             {/* Text placed below the image, with reduced font size */}
             <div className="space-y-1.5 text-center md:text-left max-w-xl">
               <p className="text-[#2c5e43] text-xs sm:text-sm md:text-base font-sans font-semibold leading-snug">
-                Método 2H™ + App Heladera Inteligente: el sistema que resuelve automáticamente todas tus comidas semanales dedicando solo 2 horas un día
+                App Heladera Inteligente™: el sistema interactivo de planificación y armado que resuelve automáticamente todas tus comidas semanales con lo que tenés en casa
               </p>
             </div>
 
             <div className="p-4 bg-amber-50/70 border border-amber-200 rounded-2xl text-left shadow-sm">
               <span className="text-xs md:text-sm text-amber-950 font-medium font-sans leading-relaxed block">
-                ⚠️ Mientras leés esto, hay mujeres perdiendo 14 horas semanales solo decidiendo qué cocinar. <strong className="text-stone-950">¿Hasta cuándo vas a ser una de ellas?</strong>
+                ⚠️ Mientras leés esto, hay miles de personas perdiendo horas semanales solo decidiendo qué cocinar. <strong className="text-stone-950">¿Hasta cuándo vas a ser una de ellas?</strong>
               </span>
             </div>
 
@@ -281,7 +280,7 @@ export default function App() {
                 onClick={scrollToOffer}
                 className="cursor-pointer w-full sm:w-auto bg-[#2c5e43] hover:bg-[#1e442f] text-white border-none px-8 py-4.5 rounded-xl font-serif font-semibold text-lg md:text-xl tracking-wide shadow-xl shadow-emerald-950/15 hover:shadow-emerald-950/25 transition-all transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2"
               >
-                <span>Quiero mi Método 2H + Heladera Inteligente</span>
+                <span>Quiero mi Heladera Inteligente™</span>
                 <ArrowRight className="w-5 h-5 text-white" />
               </button>
 
@@ -404,13 +403,13 @@ export default function App() {
       <section className="py-10 px-4 md:px-8 max-w-6xl mx-auto" id="seccion-app-inteligente">
         <div className="text-center mb-10 space-y-2">
           <span className="text-xs font-semibold tracking-widest text-[#2c5e43] uppercase bg-emerald-100/60 px-3 py-1 rounded-full">
-            Bono #1 Gratis • Acceso al Simulador
+            Demostración Interactiva en Vivo
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-medium tracking-tight text-stone-950">
-            Experimentá el Cambio Hoy Mismo
+            Probá la Heladera Inteligente™ Ahora Mismo
           </h2>
           <p className="text-stone-700 text-sm max-w-xl mx-auto">
-            Creamos la Heladera Inteligente™, una herramienta interactiva que te ayuda a organizar todas tus comidas de la semana usando los ingredientes que ya tenés en casa.
+            Agregá los alimentos que tengas guardados en tu casa hoy, elegí un escenario rápido y comprobá cómo nuestra inteligencia artificial planifica tus opciones al instante y elimina el estrés de decidir qué comer.
           </p>
         </div>
 
