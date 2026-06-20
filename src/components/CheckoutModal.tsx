@@ -21,7 +21,7 @@ interface CheckoutModalProps {
   handleQuickClose: () => void;
 }
 
-export default function CheckoutModal({
+function CheckoutModal({
   showCheckout,
   purchaseCompleted,
   buyerName,
@@ -256,3 +256,5 @@ export default function CheckoutModal({
     </AnimatePresence>
   );
 }
+
+export default React.memo(CheckoutModal);

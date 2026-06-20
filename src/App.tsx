@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { 
   ShoppingBag
 } from "lucide-react";
@@ -46,11 +46,11 @@ export default function App() {
     setBuyerEmail("carinabattaglia1975@gmail.com");
   }, []);
 
-  const handleOpenCheckout = () => {
+  const handleOpenCheckout = useCallback(() => {
     window.open("https://aureva-studio-2.myshopify.com/cart/54628348264820:1", "_blank");
-  };
+  }, []);
 
-  const handleProcessSimulatedPayment = (e: React.FormEvent) => {
+  const handleProcessSimulatedPayment = useCallback((e: React.FormEvent) => {
     e.preventDefault();
     if (!buyerName.trim()) {
       setFormError("Por favor, ingresá tu nombre completo.");
@@ -61,18 +61,18 @@ export default function App() {
       return;
     }
     setPurchaseCompleted(true);
-  };
+  }, [buyerName, buyerEmail]);
 
-  const handleQuickClose = () => {
+  const handleQuickClose = useCallback(() => {
     setShowCheckout(false);
     setPurchaseCompleted(false);
     setBuyerName("");
-  };
+  }, []);
 
-  const scrollToOffer = () => {
+  const scrollToOffer = useCallback(() => {
     const element = document.getElementById("oferta-cierre");
     element?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#fcfbfa] text-stone-800 font-sans selection:bg-emerald-100 selection:text-emerald-900 overflow-x-hidden">
@@ -130,7 +130,6 @@ export default function App() {
         <SalesCopy 
           onCtaclick={scrollToOffer} 
           onOpenCheckout={handleOpenCheckout}
-          seatsLeft={seatsLeft}
         />
       </React.Suspense>
 
