@@ -125,7 +125,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
   const heroSection = useMemo(() => (
     <div className="max-w-xl mx-auto overflow-hidden rounded-2xl border border-stone-200/80 shadow-md bg-stone-100/50">
       <img 
-        src="https://i.postimg.cc/qqpTHHwG/Chat-GPT-Image-3-jun-2026-19-49-16.webp" 
+        src="/chatgpt_hero.webp" 
         alt="Heladera Inteligente App Preview" 
         width={576}
         height={432}
