@@ -29,6 +29,34 @@ const SIMULATED_PURCHASES = [
   { name: "Mariela G.", location: "Tucumán", time: "hace 19 minutos" }
 ];
 
+const TESTIMONIALS = [
+  {
+    text: "Estaba hinchada y cansada de tirar comida podrida. El recetario del bono es oro puro y la app me solucionó la hora de la cena en 2 minutos usando lo que ya tengo.",
+    author: "Clara R.",
+    city: "Buenos Aires"
+  },
+  {
+    text: "Con el quiz entendí los miles de pesos que perdía. Compré la app y en una semana ya amorticé lo que pagué. Cocino con lo que hay sin gastar de más.",
+    author: "Martín O.",
+    city: "Santa Fe"
+  },
+  {
+    text: "Tengo tres chicos y era un caos organizar la comida con platos sanos. Con las listas de WhatsApp mi marido compra exacto lo que falta y no repetimos platos.",
+    author: "Sofía G.",
+    city: "Córdoba"
+  },
+  {
+    text: "Me detectaron celiaquía hace poco y estaba perdidísima. Los filtros de perfil alimentario me salvaron la vida, como rico y seguro todos los días.",
+    author: "Laura M.",
+    city: "Mendoza"
+  },
+  {
+    text: "La función de alertas de vencimiento es adictiva. No volví a tirar ni un yogur ni un pedazo de queso. Compra súper recomendada.",
+    author: "Diego A.",
+    city: "Rosario"
+  }
+];
+
 export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout, seatsLeft }) => {
   // Bonus seats countdown starting at 12 and randomly going down to 3, stays there
   const [bonusSeats, setBonusSeats] = useState(() => {
@@ -106,6 +134,8 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
             alt="Heladera Inteligente App Preview" 
             className="w-full h-auto object-cover block"
             referrerPolicy="no-referrer"
+            loading="eager"
+            {...({ fetchPriority: "high" } as any)}
           />
         </div>
 
@@ -164,6 +194,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
                 alt="Recetario Desinflamatorio" 
                 className="w-full h-auto object-cover block"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
 
@@ -216,26 +247,38 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
           </div>
         </div>
 
-        {/* TESTIMONIOS REALES (PLACEHOLDERS DE ALTO IMPACTO) */}
-        <div className="space-y-4 max-w-xl mx-auto pt-2">
+        {/* TESTIMONIOS REALES (MARQUESINA INFINITA QUE CORRE A LA IZQUIERDA) */}
+        <div className="space-y-4 w-full overflow-hidden py-4 max-w-xl mx-auto">
           <div className="flex items-center gap-2 text-stone-700 justify-center">
             <MessageSquare className="w-4 h-4 text-emerald-600" />
-            <h4 className="text-[10px] uppercase font-mono font-bold tracking-widest text-stone-500">Testimonios reales de instagram</h4>
+            <h4 className="text-[10px] uppercase font-mono font-bold tracking-widest text-stone-500">Testimonios reales (Mantené presionado para pausar)</h4>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-2xs">
-              <p className="text-xs text-stone-600 italic leading-relaxed">
-                &ldquo;Estaba hinchada y cansada de tirar comida podrida. El recetario del bono es oro puro y la app me solucionó la hora de la cena en 2 minutos usando lo que ya tengo.&rdquo;
-              </p>
-              <p className="text-[10px] font-bold text-stone-900 mt-2 font-mono uppercase tracking-wide">— Clara R., Buenos Aires</p>
-            </div>
-            
-            <div className="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-2xs">
-              <p className="text-xs text-stone-600 italic leading-relaxed">
-                &ldquo;Con el quiz entendí los miles de pesos que perdía. Compré la app y en una semana ya amorticé lo que pagué. Cocino con lo que hay sin gastar de más.&rdquo;
-              </p>
-              <p className="text-[10px] font-bold text-stone-900 mt-2 font-mono uppercase tracking-wide">— Martín O., Santa Fe</p>
+          <div className="relative w-full overflow-hidden">
+            {/* Sombras de desvanecimiento elegante a los lados */}
+            <div className="absolute left-0 top-0 bottom-0 w-10 bg-gradient-to-r from-stone-50 to-transparent pointer-events-none z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-stone-50 to-transparent pointer-events-none z-10" />
+
+            {/* Fila en movimiento continuo hacia la izquierda */}
+            <div className="flex w-max gap-4 animate-marquee py-2 hover:[animation-play-state:paused] active:[animation-play-state:paused]">
+              {/* Primer bloque de testimonios */}
+              {TESTIMONIALS.map((t, idx) => (
+                <div key={`t1-${idx}`} className="w-[280px] sm:w-[300px] shrink-0 bg-white p-4 rounded-xl border border-stone-200/80 shadow-2xs">
+                  <p className="text-xs text-stone-600 italic leading-relaxed">
+                    &ldquo;{t.text}&rdquo;
+                  </p>
+                  <p className="text-[10px] font-bold text-stone-900 mt-2 font-mono uppercase tracking-wide">— {t.author}, {t.city}</p>
+                </div>
+              ))}
+              {/* Duplicación exacta para crear el bucle infinito sin saltos */}
+              {TESTIMONIALS.map((t, idx) => (
+                <div key={`t2-${idx}`} className="w-[280px] sm:w-[300px] shrink-0 bg-white p-4 rounded-xl border border-stone-200/80 shadow-2xs">
+                  <p className="text-xs text-stone-600 italic leading-relaxed">
+                    &ldquo;{t.text}&rdquo;
+                  </p>
+                  <p className="text-[10px] font-bold text-stone-900 mt-2 font-mono uppercase tracking-wide">— {t.author}, {t.city}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -304,7 +347,7 @@ export const SalesCopy: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenCheckout
               <span>Garantía incondicional de satisfacción por 7 días.</span>
             </p>
             <p className="text-stone-400 text-[11px] leading-relaxed">
-              Si no sentís que la app te simplifica las cenas o te evita tirar comida, nos escribís y te reembolsamos el 100% de tu dinero al instante, sin vueltas.
+              Si no sentís que la app te simplifica las cenas o te evita tirar comida, nos escribís y te reembolsamos el 100% de tu dinero al instante, sin vueltas. <span className="font-semibold text-stone-300">(El acceso a la plataforma se bloquea automáticamente al realizarse la devolución).</span>
             </p>
           </div>
 
