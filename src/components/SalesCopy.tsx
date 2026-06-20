@@ -113,7 +113,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
         <Sparkles className="w-3.5 h-3.5 text-emerald-700 animate-pulse fill-emerald-700" />
         <span>Resultado del Test</span>
       </span>
-      <h2 className="text-2.5xl md:text-[34px] font-serif font-black text-stone-950 tracking-tight leading-tight max-w-2xl mx-auto">
+      <h2 className="text-2xl sm:text-3xl font-serif font-black text-stone-950 tracking-tight leading-tight max-w-2xl mx-auto">
         El test no miente: Estás tirando una fortuna por mes en comida tirada a la basura. Frená el desperdicio HOY.
       </h2>
       <p className="text-stone-600 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
@@ -127,6 +127,8 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
       <img 
         src="https://i.postimg.cc/qqpTHHwG/Chat-GPT-Image-3-jun-2026-19-49-16.webp" 
         alt="Heladera Inteligente App Preview" 
+        width={576}
+        height={432}
         className="w-full h-auto object-cover block"
         referrerPolicy="no-referrer"
         loading="eager"
@@ -141,7 +143,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
         <h3 className="text-white font-serif font-extrabold text-sm sm:text-base tracking-tight flex items-center gap-2">
           <span>🛡️</span> ¿Qué te llevás hoy con tu acceso de por vida?
         </h3>
-        <span className="text-[9px] font-mono font-bold tracking-widest text-emerald-450 uppercase bg-emerald-950/80 border border-emerald-900 px-2.5 py-0.5 rounded-full inline-block">
+        <span className="text-[9px] font-mono font-bold tracking-widest text-[#a7f3d0] uppercase bg-emerald-950/80 border border-emerald-900 px-2.5 py-0.5 rounded-full inline-block">
           Acceso Vitalicio
         </span>
       </div>
@@ -186,6 +188,8 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
           <img 
             src="/input_file_1.png?v=2" 
             alt="Recetario Desinflamatorio" 
+            width={144}
+            height={200}
             className="w-full h-auto object-cover block"
             referrerPolicy="no-referrer"
             loading="lazy"
@@ -282,10 +286,10 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
       <div className="max-w-2xl mx-auto text-center relative z-10 space-y-6">
         
         <div className="space-y-2">
-          <span className="text-[10px] font-black tracking-widest text-[#a1cca5] uppercase bg-[#2c5e43]/40 px-3.5 py-1 rounded-full border border-[#2c5e43]/45">
+          <span className="text-[10px] font-black tracking-widest text-[#d1fae5] uppercase bg-[#1e442f] px-3.5 py-1 rounded-full border border-emerald-800">
             UN SOLO PAGO • ACCESO DE POR VIDA
           </span>
-          <h2 className="text-2.5xl md:text-3xl font-serif font-semibold text-white tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-white tracking-tight">
             Llevate la App Premium hoy y frená el desperdicio
           </h2>
         </div>
@@ -297,12 +301,12 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
           </div>
 
           <div className="space-y-1">
-            <span className="text-stone-400 text-xs line-through block mt-1">Valor real: $78.000 ARS</span>
-            <p className="text-xs text-emerald-400 font-bold uppercase tracking-wider font-mono">Oferta única por lanzamiento</p>
+            <span className="text-stone-300 text-xs line-through block mt-1">Valor real: $78.000 ARS</span>
+            <p className="text-xs text-emerald-300 font-bold uppercase tracking-wider font-mono">Oferta única por lanzamiento</p>
             <h3 className="text-4xl md:text-5xl font-serif font-black text-white py-1">
               $17.900 ARS
             </h3>
-            <p className="text-[10px] text-stone-400 uppercase tracking-widest leading-loose">Solo un pago • Sin suscripciones mensuales</p>
+            <p className="text-[10px] text-stone-300 uppercase tracking-widest leading-loose">Solo un pago • Sin suscripciones mensuales</p>
           </div>
 
           {/* Gran botón de compra Shopify */}
@@ -331,12 +335,12 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
 
         {/* GARANTÍA DE 7 DÍAS EN 2 LÍNEAS */}
         <div className="max-w-md mx-auto text-center pt-2 space-y-1">
-          <p className="text-stone-200 text-xs font-bold flex items-center justify-center gap-1.5 leading-tight">
+          <p className="text-stone-100 text-xs font-bold flex items-center justify-center gap-1.5 leading-tight">
             <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
             <span>Garantía incondicional de satisfacción por 7 días.</span>
           </p>
-          <p className="text-stone-400 text-[11px] leading-relaxed">
-            Si no sentís que la app te simplifica las cenas o te evita tirar comida, nos escribís y te reembolsamos el 100% de tu dinero al instante, sin vueltas. <span className="font-semibold text-stone-300">(El acceso a la plataforma se bloquea automáticamente al realizarse la devolución).</span>
+          <p className="text-stone-300 text-[11px] leading-relaxed">
+            Si no sentís que la app te simplifica las cenas o te evita tirar comida, nos escribís y te reembolsamos el 100% de tu dinero al instante, sin vueltas. <span className="font-semibold text-stone-200">(El acceso a la plataforma se bloquea automáticamente al realizarse la devolución).</span>
           </p>
         </div>
 
@@ -345,11 +349,11 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
   ), [handlePurchase]);
 
   const footerSection = useMemo(() => (
-    <footer className="bg-stone-950 text-stone-450 py-10 px-4 border-t border-stone-900 text-xs text-center">
+    <footer className="bg-stone-950 text-stone-350 py-10 px-4 border-t border-stone-900 text-xs text-center">
       <div className="max-w-4xl mx-auto space-y-3">
-        <p className="font-serif text-stone-300">Heladera Inteligente™ - Todos los derechos reservados © {new Date().getFullYear()}</p>
-        <p className="max-w-2xl mx-auto text-stone-500 text-[10px] leading-relaxed">
-          Este sitio web no forma parte de Facebook, Instagram ni Meta Platforms, Inc. Todos los nombres de productos y marcas son propiedad de sus respectivos dueños. Aureva Studio SAS. Soporte directo: aurevastudio2@gmail.com
+        <p className="font-serif text-stone-200">Heladera Inteligente™ - Todos los derechos reservados © {new Date().getFullYear()}</p>
+        <p className="max-w-2xl mx-auto text-stone-400 text-[10px] leading-relaxed">
+          Este sitio web no forma parte de Facebook, Instagram ni Meta Platforms, Inc. Todos los nombres de productos y marcas son propiedad de sus respectivos owners. Aureva Studio SAS. Soporte directo: aurevastudio2@gmail.com
         </p>
       </div>
     </footer>

@@ -2,9 +2,9 @@ import React, { useState, useEffect, useCallback } from "react";
 import { 
   ShoppingBag
 } from "lucide-react";
+import { SalesCopy } from "./components/SalesCopy";
 
 // Lazy-load heavier components to optimize initial mobile paint speeds and TBT
-const SalesCopy = React.lazy(() => import("./components/SalesCopy").then((m) => ({ default: m.SalesCopy })));
 const CheckoutModal = React.lazy(() => import("./components/CheckoutModal"));
 
 export default function App() {
@@ -47,7 +47,7 @@ export default function App() {
   }, []);
 
   const handleOpenCheckout = useCallback(() => {
-    window.open("https://aureva-studio-2.myshopify.com/cart/54628348264820:1", "_blank");
+    window.open("https://aureva-studio-2.myshopify.com/cart/54824443674996:1", "_blank");
   }, []);
 
   const handleProcessSimulatedPayment = useCallback((e: React.FormEvent) => {
@@ -102,11 +102,11 @@ export default function App() {
             <span className="font-serif font-bold text-stone-900 tracking-tight text-base leading-none">
               Heladera Inteligente™
             </span>
-            <span className="text-[10px] text-stone-500 font-sans tracking-wide">Planificá tus Comidas</span>
+            <span className="text-[10px] text-stone-600 font-semibold font-sans tracking-wide">Planificá tus Comidas</span>
           </div>
         </div>
 
-        <nav className="hidden md:flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-stone-600">
+        <nav className="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-stone-700">
           <a href="#sales-page" className="hover:text-stone-900 transition-colors">Beneficios</a>
           <a href="#oferta-cierre" className="hover:text-stone-900 transition-colors">Ver Oferta</a>
         </nav>
@@ -121,17 +121,12 @@ export default function App() {
       </header>
 
       {/* 3) MAIN SALES PAGE CONTAINER */}
-      <React.Suspense fallback={
-        <div className="py-20 text-center flex flex-col items-center justify-center bg-stone-50">
-          <div className="w-8 h-8 border-2 border-emerald-600 border-t-transparent rounded-full animate-spin mb-4" />
-          <p className="text-stone-700 font-serif text-xs">Cargando programa...</p>
-        </div>
-      }>
+      <main id="main-content">
         <SalesCopy 
           onCtaclick={scrollToOffer} 
           onOpenCheckout={handleOpenCheckout}
         />
-      </React.Suspense>
+      </main>
 
       {/* 5) HIGH-FIDELITY SHOPPING/CHECKOUT DIALOG SYSTEM */}
       <React.Suspense fallback={null}>
