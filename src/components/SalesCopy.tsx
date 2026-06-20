@@ -302,10 +302,15 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
 
           <div className="space-y-1">
             <span className="text-stone-300 text-xs line-through block mt-1">Valor real: $78.000 ARS</span>
-            <p className="text-xs text-emerald-300 font-bold uppercase tracking-wider font-mono">Oferta única por lanzamiento</p>
-            <h3 className="text-4xl md:text-5xl font-serif font-black text-white py-1">
-              $17.900 ARS
-            </h3>
+            <p className="text-xs text-emerald-300 font-bold uppercase tracking-wider font-mono">Oferta única de lanzamiento (77% de descuento)</p>
+            <div className="flex items-center justify-center gap-2.5 py-1">
+              <h3 className="text-4xl md:text-5xl font-serif font-black text-white">
+                $17.900 ARS
+              </h3>
+              <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-black px-2 py-0.5 rounded-sm uppercase tracking-wider">
+                77% OFF
+              </span>
+            </div>
             <p className="text-[10px] text-stone-300 uppercase tracking-widest leading-loose">Solo un pago • Sin suscripciones mensuales</p>
           </div>
 
