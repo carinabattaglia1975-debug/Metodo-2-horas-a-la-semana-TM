@@ -165,9 +165,9 @@ export default function App() {
           <div className="pt-4 flex flex-col items-center gap-3">
             <button
               onClick={scrollToOffer}
-              className="cursor-pointer bg-[#2c5e43] hover:bg-[#1e442f] text-white border-none px-8 py-4.5 rounded-2xl font-serif font-semibold text-lg md:text-xl tracking-wide shadow-xl shadow-emerald-950/25 transition-all transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2"
+              className="cursor-pointer bg-emerald-600 hover:bg-emerald-700 text-white border-none px-8 py-4.5 rounded-2xl font-serif font-semibold text-lg md:text-xl tracking-wide shadow-xl shadow-emerald-950/25 transition-all transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2"
             >
-              <span>Quiero mi Heladera Inteligente</span>
+              <span>QUIERO MI ACCESO AHORA</span>
               <ArrowRight className="w-5 h-5 text-white animate-pulse" />
             </button>
 
