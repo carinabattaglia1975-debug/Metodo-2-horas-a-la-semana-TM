@@ -116,7 +116,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
       <h2 className="text-2xl sm:text-3xl font-serif font-black text-stone-950 tracking-tight leading-tight max-w-2xl mx-auto">
         El test no miente: Estás tirando una fortuna por mes en comida tirada a la basura. Frená el desperdicio HOY.
       </h2>
-      <p className="text-stone-600 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+      <p className="text-stone-700 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
         Ya viste a dónde se va tu plata. Es momento de automatizar tus cenas, usar lo que ya tenés en casa y cocinar rico en segundos, sin descargar nada.
       </p>
     </div>
@@ -237,7 +237,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
           <p className="text-stone-100 font-bold mb-0.5">
             🎉 Compra reciente en tiempo real
           </p>
-          <p className="text-[10px] text-stone-400 leading-normal">
+          <p className="text-[10px] text-stone-300 leading-normal">
             {currentPurchase.name} ({currentPurchase.location}) adquirió el acceso de por vida + Bono de Urgencia <strong>{currentPurchase.time}</strong>.
           </p>
         </div>
@@ -249,7 +249,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
     <div className="space-y-4 w-full overflow-hidden py-4 max-w-xl mx-auto">
       <div className="flex items-center gap-2 text-stone-700 justify-center">
         <MessageSquare className="w-4 h-4 text-emerald-600" />
-        <h4 className="text-[10px] uppercase font-mono font-bold tracking-widest text-stone-500">Testimonios reales (Mantené presionado para pausar)</h4>
+        <h4 className="text-[10px] uppercase font-mono font-bold tracking-widest text-stone-700">Testimonios reales (Mantené presionado para pausar)</h4>
       </div>
 
       <div className="relative w-full overflow-hidden">
@@ -259,7 +259,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
         <div className="flex w-max gap-4 animate-marquee py-2 hover:[animation-play-state:paused] active:[animation-play-state:paused]">
           {TESTIMONIALS.map((t, idx) => (
             <div key={`t1-${idx}`} className="w-[280px] sm:w-[300px] shrink-0 bg-white p-4 rounded-xl border border-stone-200/80 shadow-2xs">
-              <p className="text-xs text-stone-600 italic leading-relaxed">
+              <p className="text-xs text-stone-700 italic leading-relaxed">
                 &ldquo;{t.text}&rdquo;
               </p>
               <p className="text-[10px] font-bold text-stone-900 mt-2 font-mono uppercase tracking-wide">— {t.author}, {t.city}</p>
@@ -267,7 +267,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
           ))}
           {TESTIMONIALS.map((t, idx) => (
             <div key={`t2-${idx}`} className="w-[280px] sm:w-[300px] shrink-0 bg-white p-4 rounded-xl border border-stone-200/80 shadow-2xs">
-              <p className="text-xs text-stone-600 italic leading-relaxed">
+              <p className="text-xs text-stone-700 italic leading-relaxed">
                 &ldquo;{t.text}&rdquo;
               </p>
               <p className="text-[10px] font-bold text-stone-900 mt-2 font-mono uppercase tracking-wide">— {t.author}, {t.city}</p>
@@ -311,7 +311,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
                 77% OFF
               </span>
             </div>
-            <p className="text-[10px] text-stone-300 uppercase tracking-widest leading-loose">Solo un pago • Sin suscripciones mensuales</p>
+            <p className="text-[10px] text-stone-200 uppercase tracking-widest leading-loose">Solo un pago • Sin suscripciones mensuales</p>
           </div>
 
           {/* Gran botón de compra Shopify */}
@@ -324,7 +324,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
           </button>
 
           {/* Sellos de Seguridad */}
-          <div className="flex items-center justify-center gap-4 text-[9px] text-stone-400 font-mono">
+          <div className="flex items-center justify-center gap-4 text-[9px] text-stone-300 font-mono">
             <span className="flex items-center gap-1">
               <Lock className="w-3 text-emerald-500" />
               <span>Pago Seguro SSL</span>
@@ -344,7 +344,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
             <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
             <span>Garantía incondicional de satisfacción por 7 días.</span>
           </p>
-          <p className="text-stone-300 text-[11px] leading-relaxed">
+          <p className="text-stone-200 text-[11px] leading-relaxed">
             Si no sentís que la app te simplifica las cenas o te evita tirar comida, nos escribís y te reembolsamos el 100% de tu dinero al instante, sin vueltas. <span className="font-semibold text-stone-200">(El acceso a la plataforma se bloquea automáticamente al realizarse la devolución).</span>
           </p>
         </div>

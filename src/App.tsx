@@ -102,11 +102,11 @@ export default function App() {
             <span className="font-serif font-bold text-stone-900 tracking-tight text-base leading-none">
               Heladera Inteligente™
             </span>
-            <span className="text-[10px] text-stone-600 font-semibold font-sans tracking-wide">Planificá tus Comidas</span>
+            <span className="text-[10px] text-stone-800 font-semibold font-sans tracking-wide">Planificá tus Comidas</span>
           </div>
         </div>
 
-        <nav className="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-stone-700">
+        <nav className="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-stone-800">
           <a href="#sales-page" className="hover:text-stone-900 transition-colors">Beneficios</a>
           <a href="#oferta-cierre" className="hover:text-stone-900 transition-colors">Ver Oferta</a>
         </nav>
