@@ -125,7 +125,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
   const heroSection = useMemo(() => (
     <div className="max-w-xl mx-auto overflow-hidden rounded-2xl border border-stone-200/80 shadow-md bg-stone-100/50">
       <img 
-        src="/chatgpt_hero.webp" 
+        src="https://i.postimg.cc/qqpTHHwG/Chat-GPT-Image-3-jun-2026-19-49-16.webp" 
         alt="Heladera Inteligente App Preview" 
         width={576}
         height={432}
@@ -137,316 +137,116 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
     </div>
   ), []);
 
-  const stepsSection = useMemo(() => (
-    <div className="space-y-8 max-w-2xl mx-auto">
-      <div className="text-center space-y-2">
-        <span className="text-[10px] font-bold tracking-widest text-emerald-800 uppercase bg-emerald-100 px-3 py-0.5 rounded-full">
-          Simplicidad Absoluta
-        </span>
-        <h3 className="text-xl sm:text-2xl font-serif font-black text-stone-950 tracking-tight">
-          El Paso a Paso del Método 2H
-        </h3>
-        <p className="text-stone-600 text-xs sm:text-sm max-w-lg mx-auto">
-          No necesitas descargar pesadas aplicaciones ni ser experto en la cocina. El sistema se adapta a tu rutina.
-        </p>
-      </div>
-
-      <div className="grid gap-6 sm:grid-cols-2">
-        {/* Paso 1 */}
-        <div className="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-sm transition-all flex flex-col">
-          <div className="aspect-video bg-stone-100 overflow-hidden relative border-b border-stone-150">
-            <img 
-              src="/paso1_plan.webp" 
-              alt="Paso 1: Planificar tus comidas" 
-              width={280}
-              height={158}
-              className="w-full h-full object-cover block"
-              referrerPolicy="no-referrer"
-              loading="lazy"
-            />
-            <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-black w-6 h-6 rounded-full flex items-center justify-center">
-              1
-            </span>
-          </div>
-          <div className="p-4 space-y-1 flex-1 text-left">
-            <h4 className="font-serif font-bold text-stone-900 text-sm">PLANIFICÁS EN 2 MINUTOS</h4>
-            <p className="text-stone-600 text-xs leading-relaxed">
-              Armás el menú de toda la semana usando lo que ya tenés en tu heladera con ayuda de nuestro Módulo Inteligente. Cero estrés.
-            </p>
-          </div>
-        </div>
-
-        {/* Paso 2 */}
-        <div className="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-sm transition-all flex flex-col">
-          <div className="aspect-video bg-stone-100 overflow-hidden relative border-b border-stone-150">
-            <img 
-              src="/paso2_compra.webp" 
-              alt="Paso 2: Compra exacta" 
-              width={280}
-              height={158}
-              className="w-full h-full object-cover block"
-              referrerPolicy="no-referrer"
-              loading="lazy"
-            />
-            <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-black w-6 h-6 rounded-full flex items-center justify-center">
-              2
-            </span>
-          </div>
-          <div className="p-4 space-y-1 flex-1 text-left">
-            <h4 className="font-serif font-bold text-stone-900 text-sm">COMPRÁS ÚNICAMENTE LO JUSTO</h4>
-            <p className="text-stone-600 text-xs leading-relaxed">
-              La app te genera un listado automatizado optimizado y te lo envía a tu WhatsApp. No gastás de más en el súper.
-            </p>
-          </div>
-        </div>
-
-        {/* Paso 3 */}
-        <div className="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-sm transition-all flex flex-col">
-          <div className="aspect-video bg-stone-100 overflow-hidden relative border-b border-stone-150">
-            <img 
-              src="/paso3_prep.webp" 
-              alt="Paso 3: Preparación rápida" 
-              width={280}
-              height={158}
-              className="w-full h-full object-cover block"
-              referrerPolicy="no-referrer"
-              loading="lazy"
-            />
-            <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-black w-6 h-6 rounded-full flex items-center justify-center">
-              3
-            </span>
-          </div>
-          <div className="p-4 space-y-1 flex-1 text-left">
-            <h4 className="font-serif font-bold text-stone-900 text-sm">COCINÁS SANO EN 15 MINUTOS</h4>
-            <p className="text-stone-600 text-xs leading-relaxed">
-              Recetas dinámicas exprés súper desinflamatorias. Usás pocos utensilios, ensuciás menos y comés increíble todos los días.
-            </p>
-          </div>
-        </div>
-
-        {/* Paso 4 */}
-        <div className="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-sm transition-all flex flex-col">
-          <div className="aspect-video bg-stone-100 overflow-hidden relative border-b border-stone-150">
-            <img 
-              src="/paso4_semana.webp" 
-              alt="Paso 4: Disfrutar la semana" 
-              width={280}
-              height={158}
-              className="w-full h-full object-cover block"
-              referrerPolicy="no-referrer"
-              loading="lazy"
-            />
-            <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-black w-6 h-6 rounded-full flex items-center justify-center">
-              4
-            </span>
-          </div>
-          <div className="p-4 space-y-1 flex-1 text-left">
-            <h4 className="font-serif font-bold text-stone-900 text-sm">FRENÁS EL DESPERDICIO Y AHORRÁS</h4>
-            <p className="text-stone-600 text-xs leading-relaxed">
-              Disfrutás de comidas frescas, no volvés a tirar comida podrida a la basura y ahorrás miles de pesos al mes de manera natural.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  ), []);
-
   const includedSection = useMemo(() => (
-    <div className="space-y-6 max-w-2xl mx-auto">
-      <div className="text-center space-y-2 border-t border-stone-200 pt-8">
-        <span className="text-[10px] font-bold tracking-widest text-emerald-800 uppercase bg-emerald-100 px-3 py-0.5 rounded-full">
-          Valor Inigualable
+    <div className="max-w-xl mx-auto bg-stone-900 text-stone-100 p-6 sm:p-7 rounded-3xl shadow-xl border border-stone-850 text-left space-y-5">
+      <div className="flex items-center justify-between gap-3 border-b border-stone-850 pb-3.5">
+        <div className="flex items-center gap-2">
+          <span className="text-sky-400 text-sm">🔵</span>
+          <h3 className="font-serif font-black text-white text-base sm:text-md tracking-tight">
+            ¿Qué te llevás hoy con tu acceso de por vida?
+          </h3>
+        </div>
+        <span className="text-[9px] font-bold tracking-wider text-[#d1fae5] uppercase bg-[#1e442f] px-2 py-0.5 rounded-sm border border-emerald-800">
+          ACCESO VITALICIO
         </span>
-        <h3 className="text-xl sm:text-2xl font-serif font-black text-stone-950 tracking-tight">
-          ¿Qué te llevás hoy con tu acceso de por vida?
-        </h3>
-        <p className="text-stone-600 text-xs sm:text-sm max-w-lg mx-auto">
-          Un ecosistema completo diseñado para automatizar tu alimentación y cuidar tu bolsillo para siempre.
-        </p>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2">
-        {/* Producto 1 */}
-        <div className="p-4 bg-stone-900 text-white rounded-2xl border border-stone-800 shadow-sm flex flex-col justify-between">
-          <div className="space-y-3 text-left">
-            <div className="w-full aspect-video rounded-lg overflow-hidden bg-stone-950 border border-stone-850">
-              <img 
-                src="/bono1_heladera_app.webp" 
-                alt="App Heladera Inteligente" 
-                width={280}
-                height={158}
-                className="w-full h-full object-cover block"
-                referrerPolicy="no-referrer"
-                loading="lazy"
-              />
-            </div>
-            <h4 className="font-serif font-bold text-stone-100 text-sm flex items-center gap-2">
-              <span className="text-emerald-400">📲</span>
-              <span>App Heladera Inteligente (Acceso Vitalicio)</span>
-            </h4>
-            <p className="text-stone-400 text-xs leading-relaxed">
-              Planificá tus almuerzos y cenas en un toque basándote en lo que ya tenés en casa. Práctica, veloz y sin descargar nada del app store.
-            </p>
-          </div>
+      <div className="space-y-4">
+        {/* Item 1 */}
+        <div className="flex items-start gap-2.5">
+          <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+          <p className="text-xs sm:text-xs leading-relaxed">
+            <strong className="text-white font-bold font-serif">1. Módulo Inteligente de Recetas:</strong>{" "}
+            <span className="text-stone-300">armás ideas con lo que ya tenés, sin descargar nada.</span>
+          </p>
         </div>
 
-        {/* Producto 2 */}
-        <div className="p-4 bg-stone-900 text-white rounded-2xl border border-stone-800 shadow-sm flex flex-col justify-between">
-          <div className="space-y-3 text-left">
-            <div className="w-full aspect-video rounded-lg overflow-hidden bg-stone-950 border border-stone-850">
-              <img 
-                src="/bono1_superlist.webp" 
-                alt="Superlista de Compras" 
-                width={280}
-                height={158}
-                className="w-full h-full object-cover block"
-                referrerPolicy="no-referrer"
-                loading="lazy"
-              />
-            </div>
-            <h4 className="font-serif font-bold text-stone-100 text-sm flex items-center gap-2">
-              <span className="text-emerald-400">📝</span>
-              <span>Generador de Listas de WhatsApp</span>
-            </h4>
-            <p className="text-stone-400 text-xs leading-relaxed">
-              Convertí tus ingredientes faltantes en un listado exacto y despachalo directo por chat a tu pareja o familia para coordinar las compras.
-            </p>
-          </div>
+        {/* Item 2 */}
+        <div className="flex items-start gap-2.5">
+          <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+          <p className="text-xs sm:text-xs leading-relaxed">
+            <strong className="text-white font-bold font-serif">2. Listas de Compras por WhatsApp:</strong>{" "}
+            <span className="text-stone-300">generarás listados exactos y los compartís en un toque.</span>
+          </p>
         </div>
 
-        {/* Producto 3 */}
-        <div className="p-4 bg-stone-900 text-white rounded-2xl border border-stone-800 shadow-sm flex flex-col justify-between">
-          <div className="space-y-3 text-left">
-            <div className="w-full aspect-video rounded-lg overflow-hidden bg-stone-950 border border-stone-850">
-              <img 
-                src="/bono2_recetario_15m.webp" 
-                alt="Recetario Express 15 minutos" 
-                width={280}
-                height={158}
-                className="w-full h-full object-cover block"
-                referrerPolicy="no-referrer"
-                loading="lazy"
-              />
-            </div>
-            <h4 className="font-serif font-bold text-stone-100 text-sm flex items-center gap-2">
-              <span className="text-emerald-400">🍳</span>
-              <span>Recetario Express Cene Sano en 15m</span>
-            </h4>
-            <p className="text-stone-400 text-xs leading-relaxed">
-              Olvidate de pensar qué preparar cuando llegás del trabajo cansado. Platos ultra rápidos, desinflamatorios y deliciosos en minutos.
-            </p>
-          </div>
+        {/* Item 3 */}
+        <div className="flex items-start gap-2.5">
+          <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+          <p className="text-xs sm:text-xs leading-relaxed">
+            <strong className="text-white font-bold font-serif">3. Filtros por Perfil Alimentario:</strong>{" "}
+            <span className="text-stone-300">recetas para keto, vegano, celíaco o diabético.</span>
+          </p>
         </div>
 
-        {/* Producto 4 */}
-        <div className="p-4 bg-stone-900 text-white rounded-2xl border border-stone-800 shadow-sm flex flex-col justify-between">
-          <div className="space-y-3 text-left">
-            <div className="w-full aspect-video rounded-lg overflow-hidden bg-stone-950 border border-stone-850">
-              <img 
-                src="/bono2_lista_super_esp.webp" 
-                alt="La Lista de Súper Especializada" 
-                width={280}
-                height={158}
-                className="w-full h-full object-cover block"
-                referrerPolicy="no-referrer"
-                loading="lazy"
-              />
-            </div>
-            <h4 className="font-serif font-bold text-stone-100 text-sm flex items-center gap-2">
-              <span className="text-emerald-400">🥩</span>
-              <span>Lista de Súper Saludable Especializada</span>
-            </h4>
-            <p className="text-stone-400 text-xs leading-relaxed">
-              Los atajos prácticos para esquivar los ultraprocesados en la verdulería y carnicería, llevando comida real de alta calidad nutritiva.
-            </p>
-          </div>
+        {/* Item 4 */}
+        <div className="flex items-start gap-2.5">
+          <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+          <p className="text-xs sm:text-xs leading-relaxed">
+            <strong className="text-white font-bold font-serif">4. Control de Vencimientos:</strong>{" "}
+            <span className="text-stone-300">alertas antes de que se arruine cualquier alimento.</span>
+          </p>
         </div>
 
-        {/* Producto 5 */}
-        <div className="p-4 bg-stone-900 text-white rounded-2xl border border-stone-800 shadow-sm flex flex-col justify-between">
-          <div className="space-y-3 text-left">
-            <div className="w-full aspect-video rounded-lg overflow-hidden bg-stone-950 border border-stone-850">
-              <img 
-                src="/bono4_plan_sos.webp" 
-                alt="Plan SOS de Desintoxicación 7 días" 
-                width={280}
-                height={158}
-                className="w-full h-full object-cover block"
-                referrerPolicy="no-referrer"
-                loading="lazy"
-              />
-            </div>
-            <h4 className="font-serif font-bold text-stone-100 text-sm flex items-center gap-2">
-              <span className="text-emerald-400">🚨</span>
-              <span>Plan SOS de Desinflamación (7 Días)</span>
-            </h4>
-            <p className="text-stone-400 text-xs leading-relaxed">
-              Un paso a paso depurativo ideal para deshinchar el abdomen, recuperar energía limpia y reestablecer tu bienestar digestivo rápidamente.
-            </p>
-          </div>
+        {/* Item 5 */}
+        <div className="flex items-start gap-2.5">
+          <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+          <p className="text-xs sm:text-xs leading-relaxed">
+            <strong className="text-white font-bold font-serif">5. Soporte técnico vía email:</strong>{" "}
+            <span className="text-stone-300">te ayudamos si algo no funciona como esperamos.</span>
+          </p>
         </div>
+      </div>
 
-        {/* Producto 6 (Bono especial gratis hoy) */}
-        <div className="p-4 bg-emerald-950 border border-emerald-900 text-white rounded-2xl shadow-sm flex flex-col justify-between">
-          <div className="space-y-3 text-left">
-            <div className="w-full aspect-video rounded-lg overflow-hidden bg-emerald-900 border border-emerald-850">
-              <img 
-                src="/input_file_1.webp" 
-                alt="Recetario Desinflamatorio" 
-                width={280}
-                height={158}
-                className="w-full h-full object-cover block"
-                referrerPolicy="no-referrer"
-                loading="lazy"
-              />
-            </div>
-            <h4 className="font-serif font-bold text-emerald-300 text-sm flex items-center gap-2">
-              <span className="text-emerald-400">🎁</span>
-              <span>Bono de Urgencia: Recetario Desinflamatorio (PDF)</span>
-            </h4>
-            <p className="text-emerald-100/80 text-xs leading-relaxed">
-              Platos exquisitos sin gluten ni lácteos para depurar tu cuerpo y optimizar tu metabolismo de forma completamente natural. Gratis hoy.
-            </p>
-          </div>
+      {/* BONO box inside the card corresponding to the screenshot */}
+      <div className="bg-emerald-950/20 border border-emerald-500/20 p-3 rounded-2xl flex items-start gap-2.5">
+        <Gift className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
+        <div className="text-xs leading-relaxed">
+          <p className="text-emerald-400 font-extrabold uppercase tracking-wide text-[10px]">
+             BONO: Recetario Desinflamatorio
+          </p>
+          <p className="text-emerald-100/70 text-[10px]">
+            solo para los primeros 200 compradores.
+          </p>
         </div>
       </div>
     </div>
   ), []);
 
   const bonusCard = useMemo(() => (
-    <div className="bg-emerald-50/60 border-2 border-emerald-600/35 p-6 rounded-3xl max-w-xl mx-auto space-y-4 shadow-sm relative overflow-hidden">
-      <div className="absolute top-0 right-0 bg-emerald-600 text-white text-[9px] font-black tracking-wider uppercase px-2.5 py-1 rounded-bl-xl">
-        Bono de Urgencia
+    <div className="bg-[#fcfdfa] border border-emerald-500/20 p-6 rounded-3xl max-w-xl mx-auto space-y-4 shadow-sm relative overflow-hidden text-left">
+      <div className="absolute top-0 right-0 bg-emerald-600 text-white text-[9px] font-black tracking-wider uppercase px-2.5 py-1 rounded-bl-xl shadow-xs">
+        BONO ESPECIAL
       </div>
 
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-        <div className="w-28 sm:w-36 shrink-0 overflow-hidden rounded-xl border border-stone-200 shadow-md bg-white">
+        <div className="w-24 sm:w-28 shrink-0 overflow-hidden rounded-xl border border-stone-200/80 shadow-xs bg-white">
           <img 
             src="/input_file_1.webp" 
             alt="Recetario Desinflamatorio" 
-            width={144}
-            height={200}
-            className="w-full h-auto object-cover block"
+            width={112}
+            height={158}
+            className="w-full h-auto object-cover block aspect-[3/4]"
             referrerPolicy="no-referrer"
             loading="lazy"
           />
         </div>
 
-        <div className="text-center sm:text-left space-y-2 flex-1 pt-1">
-          <h4 className="font-serif font-black text-stone-900 text-sm sm:text-base tracking-tight flex items-center justify-center sm:justify-start gap-1.5">
+        <div className="space-y-2 flex-1 pt-0.5">
+          <h4 className="font-serif font-black text-stone-900 text-sm sm:text-base tracking-tight flex items-center gap-1.5 leading-tight">
             <Gift className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>GRATIS SOLO POR HOY</span>
+            <span>BONO DE URGENCIA: Recetario Desinflamatorio (PDF)</span>
           </h4>
-          <p className="text-stone-700 text-xs sm:text-sm leading-relaxed">
-            Llevando hoy la App Heladera Inteligente, te llevás de regalo el <strong>Recetario Desinflamatorio (PDF)</strong> con platos ultra rápidos para deshinchar el cuerpo sin gluten ni lácteos.
+          <p className="text-stone-700 text-xs leading-relaxed">
+            Platos ultra rápidos y deliciosos sin gluten ni lácteos para depurar tu cuerpo y optimizar tu digestión. Te lo llevás gratis únicamente hoy.
           </p>
         </div>
       </div>
 
-      <div className="pt-2.5 border-t border-emerald-600/15 space-y-2">
-        <div className="flex justify-between items-center text-xs">
-          <span className="font-bold text-stone-900 uppercase tracking-wider text-[10px]">Cupos promocionales disponibles:</span>
-          <span className="text-emerald-700 font-extrabold text-xs animate-pulse bg-emerald-100 px-2 py-0.5 rounded-md">
+      <div className="pt-3 border-t border-emerald-600/10 space-y-2">
+        <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-1.5 text-xs">
+          <span className="font-bold text-stone-900 uppercase tracking-wider text-[9px]">CUPOS DE BONIFICACIÓN PARA HOY:</span>
+          <span className="text-emerald-700 font-extrabold text-[11px] bg-emerald-100/60 px-2.5 py-0.5 rounded-sm self-start sm:self-auto uppercase">
             ¡Solo quedan {bonusSeats} de 200 lugares!
           </span>
         </div>
@@ -461,35 +261,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
     </div>
   ), [bonusSeats]);
 
-  const creadoraSection = useMemo(() => (
-    <div className="bg-stone-100/80 border border-stone-200/80 p-6 rounded-3xl max-w-xl mx-auto text-left space-y-4">
-      <h4 className="font-serif font-black text-stone-950 text-base sm:text-lg tracking-tight text-center sm:text-left">
-        Tu aliada en la cocina sana y organizada
-      </h4>
-      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-        <div className="w-24 sm:w-28 shrink-0 overflow-hidden rounded-full border-2 border-emerald-600/20 shadow-sm bg-white">
-          <img 
-            src="/creadora.webp" 
-            alt="Carina - Creadora del Método 2H" 
-            width={112}
-            height={112}
-            className="w-full h-auto object-cover block aspect-square"
-            referrerPolicy="no-referrer"
-            loading="lazy"
-          />
-        </div>
-        <div className="space-y-2 flex-1">
-          <p className="text-stone-700 text-xs leading-relaxed italic">
-            &ldquo;Hola, soy Carina. Diseñé el Método 2H y la Heladera Inteligente porque me cansé de tirar plata podrida a la basura todas las semanas y de perder horas decidiendo qué cocinar cada noche. Hoy, nuestro sistema ayuda a más de 2.000 personas a comer delicioso, desinflamar el cuerpo y ahorrar hasta un 40% en compras de súper.&rdquo;
-          </p>
-          <div className="text-left">
-            <p className="text-xs font-bold text-stone-950 font-serif leading-none">Carina B.</p>
-            <p className="text-[10px] text-emerald-700 font-bold uppercase tracking-wider font-sans mt-0.5">Creadora del Método 2H™</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  ), []);
+  const creadoraSection = null;
 
   const notificationSection = useMemo(() => (
     <div className="max-w-xl mx-auto transition-all duration-500">
@@ -640,13 +412,9 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
 
         {heroSection}
 
-        {stepsSection}
-
         {includedSection}
 
         {bonusCard}
-
-        {creadoraSection}
 
         {notificationSection}
 
