@@ -114,7 +114,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
         <span>Resultado del Test</span>
       </span>
       <h2 className="text-2xl sm:text-3xl font-serif font-black text-stone-950 tracking-tight leading-tight max-w-2xl mx-auto">
-        El test no miente: Estás tirando una fortuna por mes en comida tirada a la basura. Frená el desperdicio HOY.
+        El test no miente: Cada mes se te va más plata de la que imaginás en alimentos que no llegás a consumir. Frená el desperdicio hoy!
       </h2>
       <p className="text-stone-700 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
         Ya viste a dónde se va tu plata. Es momento de automatizar tus cenas, usar lo que ya tenés en casa y cocinar rico en segundos, sin descargar nada.
@@ -214,39 +214,38 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
   ), []);
 
   const bonusCard = useMemo(() => (
-    <div className="bg-[#fcfdfa] border border-emerald-500/20 p-6 rounded-3xl max-w-xl mx-auto space-y-4 shadow-sm relative overflow-hidden text-left">
-      <div className="absolute top-0 right-0 bg-emerald-600 text-white text-[9px] font-black tracking-wider uppercase px-2.5 py-1 rounded-bl-xl shadow-xs">
-        BONO ESPECIAL
+    <div className="bg-gradient-to-br from-emerald-50 to-stone-50 border-2 border-emerald-500/30 p-6 sm:p-8 rounded-3xl max-w-xl mx-auto space-y-5 shadow-lg relative overflow-hidden text-left">
+      <div className="absolute top-0 right-0 bg-emerald-600 text-white text-[10px] font-black tracking-widest uppercase px-3.5 py-1.5 rounded-bl-2xl shadow-sm">
+        REGALO EXCLUSIVO
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-        <div className="w-24 sm:w-28 shrink-0 overflow-hidden rounded-xl border border-stone-200/80 shadow-xs bg-white">
-          <img 
-            src="/input_file_1.webp" 
-            alt="Recetario Desinflamatorio" 
-            width={112}
-            height={158}
-            className="w-full h-auto object-cover block aspect-[3/4]"
-            referrerPolicy="no-referrer"
-            loading="eager"
-          />
-        </div>
+      <div className="space-y-3 pt-2">
+        <span className="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">
+          <Gift className="w-3.5 h-3.5 text-emerald-700" />
+          <span>¡Bono regalo 100% gratis hoy!</span>
+        </span>
 
-        <div className="space-y-2 flex-1 pt-0.5">
-          <h4 className="font-serif font-black text-stone-900 text-sm sm:text-base tracking-tight flex items-center gap-1.5 leading-tight">
-            <Gift className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>BONO DE URGENCIA: Recetario Desinflamatorio (PDF)</span>
-          </h4>
-          <p className="text-stone-700 text-xs leading-relaxed">
-            Platos ultra rápidos y deliciosos sin gluten ni lácteos para depurar tu cuerpo y optimizar tu digestión. Te lo llevás gratis únicamente hoy.
-          </p>
+        <h4 className="font-serif font-black text-emerald-950 text-base sm:text-lg tracking-tight leading-snug">
+          Recetario Desinflamatorio (PDF) — de Regalo
+        </h4>
+
+        <p className="text-stone-700 text-xs sm:text-sm leading-relaxed">
+          Platos ultra rápidos y deliciosos sin gluten ni lácteos para depurar tu cuerpo, deshincharte y optimizar tu digestión en menos de 15 minutos. Te lo llevás gratis únicamente comprando hoy.
+        </p>
+
+        <div className="bg-emerald-600/5 border border-emerald-200/50 p-3 sm:p-4 rounded-2xl flex items-center justify-between gap-3 text-xs">
+          <div className="space-y-0.5">
+            <p className="text-stone-500 line-through text-[11px]">Valor de lista: $12.500 ARS</p>
+            <p className="text-emerald-800 font-extrabold text-[12px]">Sin costo para vos hoy</p>
+          </div>
+          <span className="font-black text-emerald-700 uppercase tracking-widest text-[11px] bg-emerald-100 px-3 py-1 rounded-lg">REGALO GRATUITO</span>
         </div>
       </div>
 
-      <div className="pt-3 border-t border-emerald-600/10 space-y-2">
+      <div className="pt-4 border-t border-emerald-600/10 space-y-2">
         <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-1.5 text-xs">
-          <span className="font-bold text-stone-900 uppercase tracking-wider text-[9px]">CUPOS DE BONIFICACIÓN PARA HOY:</span>
-          <span className="text-emerald-700 font-extrabold text-[11px] bg-emerald-100/60 px-2.5 py-0.5 rounded-sm self-start sm:self-auto uppercase">
+          <span className="font-bold text-stone-900 uppercase tracking-wider text-[9px]">CUPOS DE BONIFICACIÓN DISPONIBLES:</span>
+          <span className="text-emerald-700 font-extrabold text-[11px] bg-emerald-100 px-2.5 py-0.5 rounded-sm self-start sm:self-auto uppercase">
             ¡Solo quedan {bonusSeats} de 200 lugares!
           </span>
         </div>
@@ -276,7 +275,7 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
             🎉 Compra reciente en tiempo real
           </p>
           <p className="text-[10px] text-stone-300 leading-normal">
-            {currentPurchase.name} ({currentPurchase.location}) adquirió el acceso de por vida + Bono de Urgencia <strong>{currentPurchase.time}</strong>.
+            {currentPurchase.name} ({currentPurchase.location}) adquirió el acceso de por vida + Bono de regalo <strong>{currentPurchase.time}</strong>.
           </p>
         </div>
       </div>
@@ -338,18 +337,24 @@ const SalesCopyComponent: React.FC<SalesCopyProps> = ({ onCtaclick, onOpenChecko
             ¡INCLUYE EL BONO RECETARIO!
           </div>
 
-          <div className="space-y-1">
-            <span className="text-stone-300 text-xs line-through block mt-1">Valor real: $78.000 ARS</span>
-            <p className="text-xs text-emerald-300 font-bold uppercase tracking-wider font-mono">Oferta única de lanzamiento (77% de descuento)</p>
-            <div className="flex items-center justify-center gap-2.5 py-1">
-              <h3 className="text-4xl md:text-5xl font-serif font-black text-white">
-                $17.900 ARS
-              </h3>
-              <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-black px-2 py-0.5 rounded-sm uppercase tracking-wider">
-                77% OFF
+          <div className="space-y-3">
+            <div className="flex flex-col items-center justify-center gap-1">
+              <span className="text-stone-400 text-xs sm:text-sm line-through font-medium">
+                Antes: $69.900 ARS
+              </span>
+              <span className="text-emerald-400 font-extrabold text-xs tracking-wide">
+                (más de un 70% de descuento)
               </span>
             </div>
-            <p className="text-[10px] text-stone-200 uppercase tracking-widest leading-loose">Solo un pago • Sin suscripciones mensuales</p>
+            
+            <div className="py-2 text-center">
+              <span className="text-[10px] text-stone-400 uppercase tracking-widest font-bold block mb-1">PRECIO DE HOY:</span>
+              <h3 className="text-5xl md:text-6xl font-serif font-black text-emerald-400 tracking-tight leading-none drop-shadow-[0_4px_12px_rgba(52,211,153,0.18)]">
+                $17.900 ARS
+              </h3>
+            </div>
+            
+            <p className="text-[10px] text-stone-300 uppercase tracking-widest leading-loose font-medium">Solo un pago • Sin suscripciones mensuales</p>
           </div>
 
           {/* Gran botón de compra Shopify */}
